@@ -2,10 +2,22 @@
     <div id="app">
 
         <div class="container-fluid" v-on:click="openMap">
-                <h1 class="display-3 main-title" v-bind:class="{'fade-in': isMapOpen }"> Toj' me me</h1>
+            <h1 class="display-3 main-title" v-bind:class="{'fade-in': isMapOpen }"> Toj̓ ̓ me me </h1>
+            <div class="d-grid">
+                <div class="col-1">1</div>
+                <div class="col-2">2</div>
+                <div class="col-3">3</div>
+                <div class="col-1">1</div>
+                <div class="col-2">2</div>
+                <div class="col-3">3</div>
+                <div class="col-1">1</div>
+                <div class="col-2">2</div>
+                <div class="col-3">3</div>
+            </div>
             <div class="row no-wrap align-center align-center transition">
                 <div class="col-sm" v-bind:class="{'img-1': isMapOpen }">
-                    <img  v-bind:class="{'img-not-so-fluid': isMapOpen}" class="img-fluid control img-1" src="./assets/logos/1.svg" alt="logo" ref="test">
+                    <img v-bind:class="{'img-not-so-fluid': isMapOpen}" class="img-fluid control img-1"
+                         src="./assets/logos/1.svg" alt="logo" ref="test">
                 </div>
                 <div class="col-sm delay-2" v-bind:class="{'img-2': isMapOpen }">
                     <img class="img-fluid" src="./assets/logos/2.svg" alt="logo">
@@ -71,8 +83,8 @@
         },
         data() {
             return {
-                isMapOpen : false,
-        }
+                isMapOpen: false,
+            }
         },
         methods: {
             openMap() {
@@ -211,8 +223,8 @@
     }
 
     .img-1 {
-         // transform: translateY(28em);
-     }
+        // transform: translateY(28em);
+    }
 
     .img-2 {
         transform: translateY(28em);
@@ -264,6 +276,15 @@
 
     .fade-in {
         opacity: 1;
+    }
+
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+        position: absolute;
+        opacity: .1;
+        width: 100%;
     }
 
 
