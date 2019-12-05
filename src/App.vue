@@ -4,21 +4,35 @@
         <div class="container-fluid" v-on:click="openMap">
             <h1 class="display-3 main-title" v-bind:class="{'fade-in': isMapOpen }"> Toj̓ ̓ me me </h1>
             <div class="d-grid">
-                <div class="diamond first-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1></div>
+                <div class="diamond first-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/campana.jpg" alt="">
+                </div>
                 <div class=""></div>
                 <div class=""></div>
                 <div class=""></div>
-                <div class="diamond sixth-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond sixth-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/dos.jpg" alt="">
+                </div>
                 <div class=""></div>
-                <div class="diamond third-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond third-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/lengua.jpg" alt="">
+                </div>
                 <div class=""></div>
-                <div class="diamond fifth-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond fifth-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/muertos.jpg" alt="">
+                </div>
                 <div class=""></div>
-                <div class="diamond second-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond second-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/negritos.jpg" alt="">
+                </div>
                 <div class=""></div>
-                <div class="diamond fourth-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond fourth-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/pilchilique.jpg" alt="">
+                </div>
                 <div class=""></div>
-                <div class="diamond seventh-diamond" v-bind:class="{'fade-in': isMapOpen }"></div>
+                <div class="diamond seventh-diamond" v-bind:class="{'fade-in': isMapOpen }" v-b-modal.modal-1>
+                    <img class="mask" src="./assets/mascaras/rio.jpg" alt="">
+                </div>
             </div>
             <div class="row no-wrap align-center align-center transition">
                 <div class="col-sm" v-bind:class="{'img-1': isMapOpen }">
@@ -78,21 +92,73 @@
         <b-modal id="modal-1" centered>
             <img class="modal-logo" src="./assets/logos/8.svg" alt="">
             <h3 class="my-1 mb-4 font-weight-bold text-uppercase">Titulo</h3>
-            <div class="d-flex">
-                <div class="d-grid--left">
-                    <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non velit
-                        porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus, quas quidem
-                        dolores animi placeat. Dolorum!</p>
 
-                </div>
-                <div class="d-grid--right">
-                    <img src="https://via.placeholder.com/150x150" alt="">
-                    <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non velit
-                        porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus, quas quidem
-                        dolores animi placeat. Dolorum!</p>
+            <div>
+                <b-tabs content-class="mt-3">
+                    <b-tab title="Contenido Uno" active>
 
-                </div>
+                        <div class="d-flex">
+                            <div class="d-grid--left">
+                                <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laudantium non velit
+                                    porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus,
+                                    quas quidem
+                                    dolores animi placeat. Dolorum!</p>
+
+                            </div>
+                            <div class="d-grid--right">
+                                <img src="https://via.placeholder.com/150x150" alt="">
+                                <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laudantium non velit
+                                    porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus,
+                                    quas quidem
+                                    dolores animi placeat. Dolorum!</p>
+
+                            </div>
+                        </div>
+
+                    </b-tab>
+                    <b-tab title="Contenido Dos">
+
+                        <div class="d-flex">
+
+                            <p class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laudantium non velit
+                                porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus,
+                                quas quidem
+                                dolores animi placeat. Dolorum!</p>
+
+                        </div>
+
+                    </b-tab>
+                    <b-tab title="Contenido Tres">
+
+                        <div class="d-flex">
+                            <div class="d-grid--left">
+                                <img class="w-100" src="https://via.placeholder.com/600x350" alt="">
+
+                                <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laudantium non velit
+                                    porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus,
+                                    quas quidem
+                                    dolores animi placeat. Dolorum!</p>
+                                <img class="w-100" src="https://via.placeholder.com/600x50" alt="">
+                                <p class="text-left p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laudantium non velit
+                                    porro error vel magni, autem tenetur ex nemo qui eum officiis praesentium possimus,
+                                    quas quidem
+                                    dolores animi placeat. Dolorum!</p>
+                                <img class="w-100" src="https://via.placeholder.com/600x50" alt="">
+
+
+                            </div>
+                        </div>
+
+                    </b-tab>
+                </b-tabs>
             </div>
+
+
         </b-modal>
     </div>
 </template>
@@ -251,50 +317,50 @@
     }
 
     .img-1 {
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-2 {
         transform: translateY(28em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-3 {
         transform: translateY(20em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-4 {
         transform: translateY(12em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-5 {
         transform: translateY(26em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-6 {
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-7 {
         transform: translateY(18em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-8 {
         transform: translateY(7em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-9 {
         transform: translateY(-17em);
-        opacity: .2;
+        opacity: .5;
     }
 
     .img-10 {
-        opacity: .2;
+        opacity: .5;
     }
 
     .main-title {
@@ -329,12 +395,16 @@
         cursor: pointer;
         transform: rotate(45deg);
         border-radius: 10px;
-        background: #ffffff6e;
+        background: #ffffff;
         transition: all 3800ms ease-in;
+
+        &:focus {
+            outline: none;
+        }
 
         &:hover {
             transition: none;
-            background: white;
+            background: darken(white, 10%)
         }
     }
 
@@ -381,6 +451,19 @@
         width: 120px;
         border-radius: 50%;
         padding: 10px;
+    }
+
+    .tab-content.mt-3 {
+        margin-top: 0 !important;
+    }
+
+    .tab-pane.active {
+        background: white;
+        border: 0 !important;
+    }
+
+    .mask {
+        width: 50px;
     }
 
 
